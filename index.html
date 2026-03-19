@@ -339,15 +339,14 @@
 
         /* MVV Section */
         .mvv-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
 
         .mvv-card {
-            background: #fff;
             border-radius: 8px;
-            padding: 40px;
+            padding: 50px 40px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
             transition: var(--transition);
@@ -358,8 +357,21 @@
             box-shadow: 0 15px 40px rgba(0, 163, 224, 0.1);
         }
 
+        /* MVV Gradient Backgrounds & Colors */
+        .mission-card {
+            background: linear-gradient(135deg, #ffffff, #f0f9ff);
+        }
+
+        .vision-card {
+            background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, var(--color-sky-blue), var(--color-sky-dark));
+        }
+
         .mvv-label {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 700;
             color: var(--color-sky-blue);
             letter-spacing: 0.1em;
@@ -368,7 +380,7 @@
         }
 
         .mvv-label-sub {
-            font-size: 0.75rem;
+            font-size: 0.8rem;
             color: var(--color-text-sub);
             display: block;
             font-weight: 500;
@@ -377,10 +389,11 @@
         }
 
         .mvv-card h3 {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin-bottom: 0;
             color: var(--color-text-main);
             line-height: 1.6;
+            font-weight: 700;
         }
 
         .value-list-container {
@@ -417,15 +430,32 @@
             font-weight: 500;
         }
 
+        /* Value card text color overrides */
+        .value-card .mvv-label {
+            color: #fff;
+        }
+
+        .value-card .mvv-label-sub {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .value-card .value-list .num {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .value-card .value-list .text {
+            color: #fff;
+        }
+
         /* Faculties Grid */
         .faculty-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(2, 1fr);
             gap: 30px;
         }
 
         .faculty-card {
-            padding: 35px;
+            padding: 40px;
             background: #fff;
             border: 1px solid #edf2f7;
             border-radius: 8px;
@@ -474,7 +504,7 @@
             margin-bottom: 1rem;
             font-weight: 700;
             border-bottom: 1px solid #f1f5f9;
-            padding-bottom: 10px;
+            padding-bottom: 15px;
             color: var(--color-sky-blue);
         }
 
@@ -637,8 +667,8 @@
 
         /* UNITES Page Specific */
         .unites-hero {
-            height: 60vh;
-            min-height: 400px;
+            height: auto;
+            min-height: 60vh;
             background: linear-gradient(135deg, var(--color-sky-blue), var(--color-sky-dark));
             color: white;
             display: flex;
@@ -646,7 +676,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 0 5%;
+            padding: 140px 5% 80px;
         }
 
         .unites-hero h2 {
@@ -1024,6 +1054,11 @@
                 font-size: 0.9rem;
             }
 
+            .unites-hero {
+                padding: 120px 5%;
+                height: auto;
+            }
+
             .unites-hero h2 {
                 font-size: 1.6rem;
             }
@@ -1090,13 +1125,13 @@
 
             <!-- 1. Hero -->
             <header class="hero-main">
-                <h1>健康のチカラを<br>社会で機能する仕事に。</h1>
+                <h1>健康のチカラを、<br>社会で機能する仕事に。</h1>
                 <div class="hero-sub">
-                    運動指導者の価値を高め<br>企業・地域・個人の健康を支えるプラットフォーム。
+                    運動指導者の価値を高め、企業・地域・個人の健康を支えるプラットフォーム構想。
                 </div>
                 <div class="hero-statement">
                     学びを資格で終わらせず、社会実装までつなげる。<br>
-                    健康を仕事にする人のための実践環境です。
+                    ここは、健康を仕事にする人のための実践環境です。
                 </div>
                 <div class="btn-group">
                     <a onclick="setTimeout(() => location.hash='#faculties', 50);" class="btn-primary">学部を見る</a>
@@ -1119,17 +1154,17 @@
                         </div>
 
                         <div class="mvv-grid">
-                            <article class="mvv-card">
+                            <article class="mvv-card mission-card">
                                 <span class="mvv-label">MISSION</span>
                                 <span class="mvv-label-sub">（私たちの使命・役割）</span>
                                 <h3>フィットネスの力で、<br>社会の健康（国力の向上）を実現する。</h3>
                             </article>
-                            <article class="mvv-card">
+                            <article class="mvv-card vision-card">
                                 <span class="mvv-label">VISION</span>
                                 <span class="mvv-label-sub">（目指す未来像）</span>
                                 <h3>運動指導者が、企業・地域・個人の未来を支える<br>社会的専門職として認知される世界をつくる。</h3>
                             </article>
-                            <article class="mvv-card" style="grid-column: 1 / -1;">
+                            <article class="mvv-card value-card">
                                 <div class="text-center" style="margin-bottom: 2rem;">
                                     <span class="mvv-label" style="font-size: 1.1rem;">VALUE</span>
                                     <span class="mvv-label-sub" style="margin-bottom: 0;">（大切にする行動指針・価値観）</span>
@@ -1167,7 +1202,7 @@
                 <section id="faculties" style="background: var(--color-soft-gray);">
                     <div class="container">
                         <div class="section-header">
-                            <h2>4つの学部から、健康の未来を学ぶ</h2>
+                            <h2>健康の未来を学ぶ４つの学部</h2>
                         </div>
 
                         <div class="faculty-grid">
