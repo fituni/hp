@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FiTNESS UNIVERSITY | 運動指導者の価値を社会へ</title>
-    <meta name="description" content="健康のチカラを、社会で機能する仕事に。運動指導者の価値を高め、企業・地域・個人の健康を支えるプラットフォーム構想。">
-
-    <!-- Google Fonts: Modern Sans-Serif Unity -->
+    <title>Community (Unites) | FiTNESS UNIVERSITY</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --color-sky-blue: #00A3E0;
@@ -1097,14 +1091,12 @@
         }
     </style>
 </head>
-
-<body>
-
+<body style="background: var(--color-base-white);">
     <!-- Menu Overlay for Mobile -->
     <div class="menu-overlay" id="menu-overlay" onclick="closeMobileMenu()"></div>
 
     <nav>
-        <div class="logo" onclick="showHome()">FiTNESS UNIVERSITY</div>
+        <a href="../../index.html" class="logo">FiTNESS UNIVERSITY</a>
         <!-- Hamburger Icon for Mobile -->
         <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
             <span></span>
@@ -1112,215 +1104,17 @@
             <span></span>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li><a onclick="closeMobileMenu(); showHome(); setTimeout(() => location.hash='#about', 50);">理念・使命</a></li>
-            <li><a onclick="closeMobileMenu(); showHome(); setTimeout(() => location.hash='#faculties', 50);">学部紹介</a>
-            </li>
-            <li><a href="members/index.html" onclick="closeMobileMenu();">メンバー</a></li>
-            <li><a href="members/community/index.html" onclick="closeMobileMenu();">Community (Unites)</a></li>
+            <li><a href="../../index.html#about" onclick="closeMobileMenu();">理念・使命</a></li>
+            <li><a href="../../index.html#faculties" onclick="closeMobileMenu();">学部紹介</a></li>
+            <li><a href="index.html" onclick="closeMobileMenu();">Community (Unites)</a></li>
+            <li><a href="../index.html" onclick="closeMobileMenu();">メンバー</a></li>
         </ul>
     </nav>
 
-    <div id="app">
-        <!-- ▼▼▼ MAIN PAGE ▼▼▼ -->
-        <div id="home-page" class="page">
-
-            <!-- 1. Hero -->
-            <header class="hero-main">
-                <h1>健康のチカラを、<br>社会で機能する仕事に。</h1>
-                <div class="hero-sub">
-                    運動指導者の価値を高め、企業・地域・個人の健康を支えるプラットフォーム構想。
-                </div>
-                <div class="hero-statement">
-                    学びを資格で終わらせず、社会実装までつなげる。<br>
-                    ここは、健康を仕事にする人のための実践環境です。
-                </div>
-                <div class="btn-group">
-                    <a onclick="setTimeout(() => location.hash='#faculties', 50);" class="btn-primary">学部を見る</a>
-                    <a href="members/community/index.html" class="btn-white-outline">コミュニティ詳細を見る</a>
-                </div>
-            </header>
-
-            <main>
-                <!-- 2. MVV (理念と存在意義) -->
-                <section id="about" style="background: var(--color-base-white);">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2>健やかで豊かな社会を牽引する一員に</h2>
-                            <p>
-                                健康課題はもはや個人だけの問題ではありません。<br>
-                                企業の生産性、地域の持続可能性、そして人生の質にまで直結しています。<br>
-                                だからこそ、現場で健康を支えるフィットネス従事者の役割は、もっと大きいはずです。<br>
-                                私たちは、皆さんの持つ経験とスキルをアップデートし、<br>「社会の健康を実装する専門職」へと上書きするプラットフォームを提供します。
-                            </p>
-                        </div>
-
-                        <div class="mvv-grid">
-                            <article class="mvv-card mission-card">
-                                <span class="mvv-label">MISSION</span>
-                                <span class="mvv-label-sub">（私たちの使命・役割）</span>
-                                <h3>フィットネスの力で、<br>社会の健康（国力の向上）を実現する。</h3>
-                            </article>
-                            <article class="mvv-card vision-card">
-                                <span class="mvv-label">VISION</span>
-                                <span class="mvv-label-sub">（目指す未来像）</span>
-                                <h3>運動指導者が、企業・地域・個人の未来を支える<br>社会的専門職として認知される世界をつくる。</h3>
-                            </article>
-                            <article class="mvv-card value-card">
-                                <div class="text-center" style="margin-bottom: 2rem;">
-                                    <span class="mvv-label" style="font-size: 1.1rem;">VALUE</span>
-                                    <span class="mvv-label-sub" style="margin-bottom: 0;">（大切にする行動指針・価値観）</span>
-                                </div>
-                                <div class="value-list-container">
-                                    <ul class="value-list">
-                                        <li>
-                                            <span class="num">1. 実学</span>
-                                            <span class="text">学びは現場で機能して初めて価値になる</span>
-                                        </li>
-                                        <li>
-                                            <span class="num">2. 信頼</span>
-                                            <span class="text">根拠、誠実さ、継続で信用を築く</span>
-                                        </li>
-                                        <li>
-                                            <span class="num">3. 共創</span>
-                                            <span class="text">個人ではなく社会全体で健康をつくる</span>
-                                        </li>
-                                        <li>
-                                            <span class="num">4. 還元</span>
-                                            <span class="text">学びを自己満足で終わらせず社会へ返す</span>
-                                        </li>
-                                        <li>
-                                            <span class="num">5. 進化</span>
-                                            <span class="text">専門性を固定せず、学び続ける共同体である</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 3. Faculties (学部紹介) -->
-                <section id="faculties" style="background: var(--color-soft-gray);">
-                    <div class="container">
-                        <div class="section-header">
-                            <h2>健康の未来を学ぶ４つの学部</h2>
-                        </div>
-
-                        <div class="faculty-grid">
-                            <article class="faculty-card" onclick="openDetail('ai')">
-                                <span class="faculty-num">FACULTY 01</span>
-                                <h3>健康AI人間設計学部</h3>
-                                <p>生体ログからパフォーマンス低下を予測。個別のバイオリズムに最適化された介入アルゴリズムの開発を学ぶ。</p>
-                            </article>
-
-                            <article class="faculty-card" onclick="openDetail('corporate')">
-                                <span class="faculty-num">FACULTY 02</span>
-                                <h3>健康経営・法人支援学部</h3>
-                                <p>企業の健康課題を解決。BtoB提案やプログラム設計を通じ、組織の生産性を高める力を学ぶ。</p>
-                            </article>
-
-                            <article class="faculty-card" onclick="openDetail('community_design')">
-                                <span class="faculty-num">FACULTY 03</span>
-                                <h3>地域健康デザイン学部</h3>
-                                <p>高齢者支援や介護予防。自治体と連携し、地域社会の健康とコミュニティをつくる力を学ぶ。</p>
-                            </article>
-
-                            <article class="faculty-card" onclick="openDetail('career')">
-                                <span class="faculty-num">FACULTY 04</span>
-                                <h3>キャリア・教育実装学部</h3>
-                                <p>独立、ブランド設計、収益化。自身の学びを職業と価値に変え、教育者として成長する力を学ぶ。</p>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 4. Results (信頼と実績) -->
-                <section id="results" style="background: var(--color-base-white); padding-bottom: 80px;">
-                    <div class="container">
-                        <div class="section-header" style="margin-bottom: 0;">
-                            <h2>信頼と実績</h2>
-                            <p style="font-size: 0.95rem; margin-top: 1rem;">※社会実装に向けた最新のデータと実績を現在集計中です。</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 5. Future (プラットフォーム構想の未来) -->
-                <section id="future" class="future-section">
-                    <div class="container">
-                        <h2>学びを、一過性で終わらせない。</h2>
-                        <p class="future-text">
-                            講座、学部、実践、コミュニティ、そして社会連携へ。<br>
-                            私たちは、学びを「受けて終わる」ものにしないために、実践とつながりが持続する共同体を構想しています。
-                        </p>
-                        <div class="discord-box">
-                            <p>将来的にはDiscordコミュニティを基盤に、<br>学びと実践が常に循環し続ける「実質的なエコシステム」を構築していきます。</p>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- 6. Final CTA -->
-                <section id="final-cta"
-                    style="padding: 100px 5%; background: var(--color-base-white); text-align: center;">
-                    <div class="container">
-                        <h2
-                            style="font-size: 2rem; margin-bottom: 1.5rem; font-weight: 700; color: var(--color-text-main);">
-                            健康の力を、社会を支える力に変える。</h2>
-                        <p
-                            style="font-size: 1.05rem; color: var(--color-text-sub); margin-bottom: 2.5rem; line-height: 1.9;">
-                            あなたの専門性が、次の社会インフラを創る。<br>
-                            まずは、私たちが提供する実践環境とコミュニティの詳細をご覧ください。
-                        </p>
-                        <div class="btn-group">
-                            <a href="members/community/index.html" class="btn-primary">Fitness Universityに興味をお持ちの方へ</a>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <footer>
-                <div class="container text-center">
-                    <div class="copyright">&copy; 2026 FiTNESS UNIVERSITY. ALL RIGHTS RESERVED.</div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- ▼▼▼ FACULTY DETAIL PAGE ▼▼▼ -->
-        <div id="faculty-detail-page" class="page hidden">
-            <div class="container page-padding">
-                <a class="back-btn" onclick="showHome(); setTimeout(() => location.hash='#faculties', 50);">
-                    ← トップへ戻る
-                </a>
-
-                <div class="detail-header-custom">
-                    <div id="detail-num" class="detail-num-custom">FACULTY 0X</div>
-                    <h2 id="detail-title" class="detail-title-custom">学部名</h2>
-                </div>
-
-                <div class="detail-grid">
-                    <div>
-                        <h4 class="detail-heading">育てたい人物像・学びの内容</h4>
-                        <p id="detail-desc" class="detail-p">詳細な説明文</p>
-
-                        <h4 class="detail-heading">修了後の未来・社会への接続</h4>
-                        <p id="detail-vision" class="detail-p" style="margin-bottom: 0;">展望</p>
-                    </div>
-                    <div class="detail-sidebar-custom">
-                        <h5 class="detail-sidebar-heading">主な学習領域</h5>
-                        <ul id="detail-features" class="check-list-detail">
-                            <!-- JSで生成 -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <footer>
-                <div class="container text-center">
-                    <div class="copyright">&copy; 2026 FiTNESS UNIVERSITY. ALL RIGHTS RESERVED.</div>
-                </div>
-            </footer>
-        </div>
-
-        <!-- ▼▼▼ UNITES DETAIL PAGE (COMMUNITY & MESSAGE) ▼▼▼ -->
-        <div id="unites-detail-page" class="page hidden" style="background: var(--color-soft-gray);">
+    <main class="page-padding">
+        <div style="margin-top: 50px;">
+            <!-- ▼▼▼ UNITES DETAIL PAGE (COMMUNITY & MESSAGE) ▼▼▼ -->
+        <div id="unites-detail-page" class="page" style="background: var(--color-soft-gray);">
 
             <!-- 1. Hero -->
             <header class="unites-hero">
@@ -1521,12 +1315,11 @@
                             <h4>勉強会・イベントを見る ➔</h4>
                             <p>学びや交流を通じて、視点を広げたい方へ</p>
                         </a>
-                        <a onclick="alert('健美食ページへ移動します')" class="next-step-card">
+                        <a href="https://fituni.github.io/kenbisyoku/" class="next-step-card">
                             <h4>健美食を見る ➔</h4>
                             <p>健康経営をより深く学び、次の動きを整理したい方へ</p>
                         </a>
-                        <a onclick="closeMobileMenu(); showHome(); setTimeout(() => location.hash='#faculties', 50);"
-                            class="next-step-card">
+                        <a href="../../index.html#faculties" class="next-step-card">
                             <h4>学部一覧を見る ➔</h4>
                             <p>FiTNESS UNIVERSITYの学びの全体像を知りたい方へ</p>
                         </a>
@@ -1542,64 +1335,10 @@
         </div>
     </div>
 
-    <!-- JavaScript for Page Switching & Data -->
+    
+        </div>
+    </main>
     <script>
-        const facultyData = {
-            'ai': {
-                num: 'FACULTY 01',
-                title: '健康AI人間設計学部',
-                desc: '本学部では、ウェアラブルデバイス等から得られる膨大な生体ログをAIモデルに学習させ、人間のパフォーマンスが低下する「生理学的バグ」をリアルタイムで特定します。個別のバイオリズムに最適化された行動介入（食事、光、運動負荷）のアルゴリズムをプログラミングする技術を学びます。',
-                vision: '属人的な健康法を排除し、人間の生体データを最適化する「人間設計OS」を構築。世界規模で知的生産性の最大化を目指します。',
-                features: [
-                    'リアルタイム生体データ解析技術',
-                    '行動予測・介入アルゴリズムの開発',
-                    'パフォーマンス低下の事前検知モデル構築',
-                    '医療・健康データサイエンスの基礎'
-                ]
-            },
-            'corporate': {
-                num: 'FACULTY 02',
-                title: '健康経営・法人支援学部',
-                desc: '運動指導の価値を、企業という組織単位へ提供する方法を学びます。従業員の健康課題が生産性に与える影響を論理的に分析し、BtoB向けの健康経営プログラムを設計・提案する法人営業スキルや組織導入のノウハウを習得します。',
-                vision: '企業の福利厚生や人事戦略に直接関与し、組織のエンゲージメントと生産性を高める「健康経営コンサルタント」として、全く新しい市場を開拓します。',
-                features: [
-                    '健康経営のメカニズムとROI算出',
-                    '組織の健康課題の抽出・分析',
-                    'BtoB向け提案・法人営業スキル',
-                    '福利厚生プログラムの導入と運用'
-                ]
-            },
-            'community_design': {
-                num: 'FACULTY 03',
-                title: '地域健康デザイン学部',
-                desc: '地域社会が抱える超高齢化や孤立という課題に対し、健康を通じたアプローチで解決を図ります。介護予防プログラムの構築や、自治体・地域包括支援センターとの連携方法、コミュニティづくりのノウハウを学びます。',
-                vision: '地域の「なくてはならないインフラ」として機能し、運動教室やイベントを通じて人々のつながりを生み出す、ソーシャル・ヘルスデザイナーとして活躍します。',
-                features: [
-                    '高齢者の生理学と介護予防',
-                    '地域包括ケアシステムとの連携',
-                    '自治体向け企画・提案・交渉スキル',
-                    '健康を通じたコミュニティ形成'
-                ]
-            },
-            'career': {
-                num: 'FACULTY 04',
-                title: 'キャリア・教育実装学部',
-                desc: '優れた技術を、確実に収益と社会的価値に変換するビジネススキルを学びます。自分自身のブランド設計、独立開業のノウハウ、情報発信、さらには後進を育てる教育者としての視点を多角的に身につけます。',
-                vision: 'プレイヤーとして終わるのではなく、自身のメソッドを仕組み化し、教育者や経営者として事業をスケールさせる、持続可能なキャリアを構築します。',
-                features: [
-                    '独立開業と収益化モデル構築',
-                    'パーソナル・ブランディングと発信',
-                    'コンテンツの仕組み化・商品化',
-                    '次世代を育てる教育者メンタリティ'
-                ]
-            }
-        };
-
-        const homePage = document.getElementById('home-page');
-        const detailPage = document.getElementById('faculty-detail-page');
-        const unitesPage = document.getElementById('unites-detail-page');
-
-        /* Mobile Menu Setup */
         const hamburger = document.getElementById('hamburger');
         const navLinks = document.getElementById('nav-links');
         const menuOverlay = document.getElementById('menu-overlay');
@@ -1615,51 +1354,6 @@
             navLinks.classList.remove('active');
             menuOverlay.classList.remove('active');
         }
-
-        function openDetail(facultyId) {
-            const data = facultyData[facultyId];
-            if (!data) return;
-
-            document.getElementById('detail-num').innerText = data.num;
-            document.getElementById('detail-title').innerText = data.title;
-            document.getElementById('detail-desc').innerText = data.desc;
-            document.getElementById('detail-vision').innerText = data.vision;
-
-            const featuresList = document.getElementById('detail-features');
-            featuresList.innerHTML = '';
-            data.features.forEach(feature => {
-                const li = document.createElement('li');
-                li.innerText = feature;
-                featuresList.appendChild(li);
-            });
-
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            homePage.classList.add('hidden');
-            unitesPage.classList.add('hidden');
-
-            setTimeout(() => {
-                detailPage.classList.remove('hidden');
-            }, 300);
-        }
-
-        function openUnitesDetail() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            homePage.classList.add('hidden');
-            detailPage.classList.add('hidden');
-
-            setTimeout(() => {
-                unitesPage.classList.remove('hidden');
-            }, 300);
-        }
-
-        function showHome() {
-            detailPage.classList.add('hidden');
-            unitesPage.classList.add('hidden');
-            setTimeout(() => {
-                homePage.classList.remove('hidden');
-            }, 300);
-        }
     </script>
 </body>
-
 </html>
