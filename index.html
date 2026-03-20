@@ -359,7 +359,7 @@
 
         /* MVV Gradient Backgrounds & Colors */
         .mission-card {
-            background: linear-gradient(135deg, #ffffff, #f0f9ff);
+            background: linear-gradient(135deg, var(--color-sky-blue), var(--color-sky-dark));
         }
 
         .vision-card {
@@ -367,7 +367,7 @@
         }
 
         .value-card {
-            background: linear-gradient(135deg, var(--color-sky-blue), var(--color-sky-dark));
+            background: linear-gradient(135deg, #ffffff, #f0f9ff);
         }
 
         .mvv-label {
@@ -430,20 +430,16 @@
             font-weight: 500;
         }
 
-        /* Value card text color overrides */
-        .value-card .mvv-label {
+        /* Mission card text color overrides */
+        .mission-card .mvv-label {
             color: #fff;
         }
 
-        .value-card .mvv-label-sub {
+        .mission-card .mvv-label-sub {
             color: rgba(255, 255, 255, 0.8);
         }
 
-        .value-card .value-list .num {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
-        .value-card .value-list .text {
+        .mission-card h3 {
             color: #fff;
         }
 
