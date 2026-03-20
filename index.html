@@ -303,7 +303,7 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.85)),
-                url('https://images.unsplash.com/photo-1571019614242-c5c5adee9f50?auto=format&fit=crop&q=80&w=2000');
+                url('fu_top_v.png');
             background-size: cover;
             background-position: center;
             text-align: center;
@@ -452,7 +452,38 @@
             gap: 30px;
         }
 
+        
         .faculty-card {
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .faculty-card-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 1px solid #edf2f7;
+            transition: transform 0.4s ease;
+        }
+
+        .faculty-card:hover .faculty-card-img {
+            transform: scale(1.03);
+        }
+        
+        .faculty-img-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .faculty-card-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .faculty-card-old {
             padding: 40px;
             background: #fff;
             border: 1px solid #edf2f7;
@@ -1152,7 +1183,10 @@
                             </p>
                         </div>
 
-                        <div class="mvv-grid">
+                        <div style="text-align: center; margin-bottom: 60px;">
+                        <img src="fu_vision.png" alt="Our Vision" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.08);">
+                    </div>
+                    <div class="mvv-grid">
                             <article class="mvv-card mission-card">
                                 <span class="mvv-label">MISSION</span>
                                 <span class="mvv-label-sub">（私たちの使命・役割）</span>
@@ -1206,23 +1240,35 @@
 
                         <div class="faculty-grid">
                             <article class="faculty-card" onclick="openDetail('ai')">
-                                <span class="faculty-num">FACULTY 01</span>
-                                <h3>健康AI学部</h3>
+                                <div class="faculty-img-wrapper"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" class="faculty-card-img" alt="健康AI学部"></div>
+                                <div class="faculty-card-content">
+                                    <span class="faculty-num">FACULTY 01</span>
+                                    <h3>健康AI学部</h3>
+                                </div>
                             </article>
 
                             <article class="faculty-card" onclick="openDetail('corporate')">
-                                <span class="faculty-num">FACULTY 02</span>
-                                <h3>健康経営・法人支援学部</h3>
+                                <div class="faculty-img-wrapper"><img src="https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=800" class="faculty-card-img" alt="健康経営・法人支援学部"></div>
+                                <div class="faculty-card-content">
+                                    <span class="faculty-num">FACULTY 02</span>
+                                    <h3>健康経営・法人支援学部</h3>
+                                </div>
                             </article>
 
                             <article class="faculty-card" onclick="openDetail('community_design')">
-                                <span class="faculty-num">FACULTY 03</span>
-                                <h3>地域健康デザイン学部</h3>
+                                <div class="faculty-img-wrapper"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=800" class="faculty-card-img" alt="地域健康デザイン学部"></div>
+                                <div class="faculty-card-content">
+                                    <span class="faculty-num">FACULTY 03</span>
+                                    <h3>地域健康デザイン学部</h3>
+                                </div>
                             </article>
 
                             <article class="faculty-card" onclick="openDetail('career')">
-                                <span class="faculty-num">FACULTY 04</span>
-                                <h3>キャリア・教育実装学部</h3>
+                                <div class="faculty-img-wrapper"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800" class="faculty-card-img" alt="キャリア・教育実装学部"></div>
+                                <div class="faculty-card-content">
+                                    <span class="faculty-num">FACULTY 04</span>
+                                    <h3>キャリア・教育実装学部</h3>
+                                </div>
                             </article>
                         </div>
                     </div>
@@ -1244,10 +1290,13 @@
                         <h2>学びを、一過性で終わらせない。</h2>
                         <p class="future-text">
                             AI・教育・健康経営・イベント・コミュニティ、提供するすべてを社会連携へ。<br>
-                            主体性と創造性が自然と生み出される本来の学習コンテンツを提供。
+                            主体性と創造性が自然と生み出される学習コンテンツを提供。
                         </p>
                         <div class="discord-box">
                             <p>将来的にはDiscordコミュニティを基盤に、<br>学習と実践が常に循環し続けるシステムを構築していきます。</p>
+                        </div>
+                        <div style="text-align: center; margin-top: 50px;">
+                            <img src="fu_unites.png" alt="UNITES Community" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 15px 35px rgba(0,0,0,0.2);">
                         </div>
                     </div>
                 </section>
@@ -1292,10 +1341,10 @@
 
                 <div class="detail-grid">
                     <div>
-                        <h4 class="detail-heading">育てたい人物像・学びの内容</h4>
+                        <h4 class="detail-heading">学習内容</h4>
                         <p id="detail-desc" class="detail-p">詳細な説明文</p>
 
-                        <h4 class="detail-heading">修了後の未来・社会への接続</h4>
+                        <h4 class="detail-heading">社会への接続</h4>
                         <p id="detail-vision" class="detail-p" style="margin-bottom: 0;">展望</p>
                     </div>
                     <div class="detail-sidebar-custom">
@@ -1313,131 +1362,142 @@
             </footer>
         </div>
 
-        <footer>
-            <div class="container text-center">
-                <div class="copyright">&copy; 2026 FiTNESS UNIVERSITY. ALL RIGHTS RESERVED.</div>
-            </div>
-        </footer>
-    </div>
+        <!-- JavaScript for Page Switching & Data -->
+        <script>
+            const facultyData = {
+                'ai': {
+                    img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200',
+                    num: 'FACULTY 01',
+                    title: '健康AI学部',
+                    desc: 'AIを用いた業務の効率化を第一に、これまでに培ってきた知識や技術を社会的に価値のある能力へ変換するための方法を学びます。時間と余裕を捻出し思考を整理することで自分にしかできない強み・得意分野を再発見する。',
+                    vision: 'AIを活用し、企業や地域それぞれの健康課題の抽出・分析から、具体的な解決策の提案・実行までを担う',
+                    features: [
+                        '単純作業の効率化',
+                        'やるべきことの明確化',
+                        '自分の価値の再発見',
+                        'パフォーマンスの最大化'
+                    ]
+                },
+                'corporate': {
+                    img: 'https://images.unsplash.com/photo-1556761175-5973dc0f32d7?auto=format&fit=crop&q=80&w=1200',
+                    num: 'FACULTY 02',
+                    title: '健康経営・法人支援学部',
+                    desc: '運動指導の価値を企業という組織単位へ提供する方法を学びます。従業員の健康課題が生産性に与える影響を経営者の視点で論理的に分析し、BtoB向けの健康経営プログラムを設計・提案する法人営業スキルや組織導入のノウハウを習得します。',
+                    vision: '企業の福利厚生や人事戦略に直接関与し、組織の主体性と生産性を高める「健康経営コーチ」として、新しい市場を開拓します。',
+                    features: [
+                        '健康経営についての理解',
+                        '組織の課題解決への伴走',
+                        'BtoB向け提案・法人営業スキル',
+                        '福利厚生プログラムの導入と運用'
+                    ]
+                },
+                'community_design': {
+                    img: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1200',
+                    num: 'FACULTY 03',
+                    title: '地域健康デザイン学部',
+                    desc: '地域社会が抱える超高齢化や孤立という課題に対し、健康を通じたアプローチで解決を図ります。地域でのイベント企画・運営や自治体との連携方法など、コミュニティづくりのノウハウを学びます。',
+                    vision: '地域の「なくてはならないインフラ」として機能し、運動教室やイベントを通じて人々のつながりを生み出すプロフェッショナルとして活躍します。',
+                    features: [
+                        '各地域が抱える問題の理解',
+                        '地域の施設やシステムとの連携',
+                        '自治体向け企画・提案スキル',
+                        '健康を通じたコミュニティ形成'
+                    ]
+                },
+                'career': {
+                    img: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200',
+                    num: 'FACULTY 04',
+                    title: 'キャリア・教育実装学部',
+                    desc: '優れた技術を、確実に収益と社会的価値に変換するビジネススキルを学びます。自分自身のブランド設計、独立開業のノウハウ、情報発信、さらには後進を育てる教育者としての視点を多角的に身につけます。',
+                    vision: 'プレイヤーとして終わるのではなく、自身のスキルや経験を仕組み化し、教育者や経営者として事業をスケールさせる、持続的なキャリアを構築します。',
+                    features: [
+                        '独立開業と収益化モデル構築',
+                        'ブランドの確立と認知の拡大',
+                        'コンテンツの仕組み化',
+                        '次世代を育てる教育者へ'
+                    ]
+                }
+            };
 
-    <!-- JavaScript for Page Switching & Data -->
-    <script>
-        const facultyData = {
-            'ai': {
-                num: 'FACULTY 01',
-                title: '健康AI学部',
-                desc: '本学部では、AIを用いた業務の効率化を第一に、これまでに培ってきた知識や技術を社会的な価値のある能力に変換するためのAIの活用方法が学べます。',
-                vision: '誰にでもできる単純作業をAIに任せることで、本来あなたがやるべきであったことに前集中できる状態を目指します。',
-                features: [
-                    '単純作業の効率化',
-                    'やるべきことの明確化',
-                    '自分の価値の再発見',
-                    'パフォーマンスの最大化'
-                ]
-            },
-            'corporate': {
-                num: 'FACULTY 02',
-                title: '健康経営・法人支援学部',
-                desc: '運動指導の価値を企業という組織単位へ提供する方法を学びます。従業員の健康課題が生産性に与える影響を経営者の視点で論理的に分析し、BtoB向けの健康経営プログラムを設計・提案する法人営業スキルや組織導入のノウハウを習得します。',
-                vision: '企業の福利厚生や人事戦略に直接関与し、組織の主体性と生産性を高める「健康経営コーチ」として、新しい市場を開拓します。',
-                features: [
-                    '健康経営の重要性についての理解',
-                    '組織の健康課題の抽出・分析',
-                    'BtoB向け提案・法人営業スキル',
-                    '福利厚生プログラムの導入と運用'
-                ]
-            },
-            'community_design': {
-                num: 'FACULTY 03',
-                title: '地域健康デザイン学部',
-                desc: '地域社会が抱える超高齢化や孤立という課題に対し、健康を通じたアプローチで解決を図ります。地域でのイベント企画・運営や自治体との連携方法など、コミュニティづくりのノウハウを学びます。',
-                vision: '地域の「なくてはならないインフラ」として機能し、運動教室やイベントを通じて人々のつながりを生み出すプロフェッショナルとして活躍します。',
-                features: [
-                    '各地域が抱える問題の理解',
-                    '地域の施設やシステムとの連携',
-                    '自治体向け企画・提案・交渉スキル',
-                    '健康を通じたコミュニティ形成'
-                ]
-            },
-            'career': {
-                num: 'FACULTY 04',
-                title: 'キャリア・教育実装学部',
-                desc: '優れた技術を、確実に収益と社会的価値に変換するビジネススキルを学びます。自分自身のブランド設計、独立開業のノウハウ、情報発信、さらには後進を育てる教育者としての視点を多角的に身につけます。',
-                vision: 'プレイヤーとして終わるのではなく、自身のスキルや経験を仕組み化し、教育者や経営者として事業をスケールさせる、持続的なキャリアを構築します。',
-                features: [
-                    '独立開業と収益化モデル構築',
-                    'ブランドの確立と認知の拡大',
-                    'コンテンツの仕組み化・商品化',
-                    '次世代を育てる教育者へのステップアップ'
-                ]
+            const homePage = document.getElementById('home-page');
+            const detailPage = document.getElementById('faculty-detail-page');
+
+            /* Mobile Menu Setup */
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const menuOverlay = document.getElementById('menu-overlay');
+
+            function toggleMobileMenu() {
+                hamburger.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                menuOverlay.classList.toggle('active');
             }
-        };
 
-        const homePage = document.getElementById('home-page');
-        const detailPage = document.getElementById('faculty-detail-page');
-        const unitesPage = document.getElementById('unites-detail-page');
+            function closeMobileMenu() {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                menuOverlay.classList.remove('active');
+            }
 
-        /* Mobile Menu Setup */
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('nav-links');
-        const menuOverlay = document.getElementById('menu-overlay');
+            function openDetail(facultyId, pushHistory = true) {
+                const data = facultyData[facultyId];
+                if (!data) return;
 
-        function toggleMobileMenu() {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            menuOverlay.classList.toggle('active');
-        }
+                document.getElementById('detail-num').innerText = data.num;
+                document.getElementById('detail-title').innerText = data.title;
+                document.getElementById('detail-desc').innerText = data.desc;
+                document.getElementById('detail-vision').innerText = data.vision;
+                document.getElementById('detail-img').src = data.img;
 
-        function closeMobileMenu() {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-            menuOverlay.classList.remove('active');
-        }
+                const featuresList = document.getElementById('detail-features');
+                featuresList.innerHTML = '';
+                data.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.innerText = feature;
+                    featuresList.appendChild(li);
+                });
 
-        function openDetail(facultyId) {
-            const data = facultyData[facultyId];
-            if (!data) return;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                homePage.classList.add('hidden');
 
-            document.getElementById('detail-num').innerText = data.num;
-            document.getElementById('detail-title').innerText = data.title;
-            document.getElementById('detail-desc').innerText = data.desc;
-            document.getElementById('detail-vision').innerText = data.vision;
+                setTimeout(() => {
+                    detailPage.classList.remove('hidden');
+                }, 300);
 
-            const featuresList = document.getElementById('detail-features');
-            featuresList.innerHTML = '';
-            data.features.forEach(feature => {
-                const li = document.createElement('li');
-                li.innerText = feature;
-                featuresList.appendChild(li);
+                if (pushHistory) {
+                    history.pushState({ page: 'detail', facultyId: facultyId }, '', '#faculty-' + facultyId);
+                }
+            }
+
+            function showHome(pushHistory = true) {
+                detailPage.classList.add('hidden');
+                setTimeout(() => {
+                    homePage.classList.remove('hidden');
+                }, 300);
+
+                if (pushHistory) {
+                    history.pushState({ page: 'home' }, '', window.location.pathname + window.location.search);
+                }
+            }
+
+            window.addEventListener('popstate', (e) => {
+                const hash = window.location.hash;
+                if (hash.startsWith('#faculty-')) {
+                    const facultyId = hash.replace('#faculty-', '');
+                    openDetail(facultyId, false);
+                } else {
+                    showHome(false);
+                }
             });
 
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            homePage.classList.add('hidden');
-            unitesPage.classList.add('hidden');
-
-            setTimeout(() => {
-                detailPage.classList.remove('hidden');
-            }, 300);
-        }
-
-        function openUnitesDetail() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-            homePage.classList.add('hidden');
-            detailPage.classList.add('hidden');
-
-            setTimeout(() => {
-                unitesPage.classList.remove('hidden');
-            }, 300);
-        }
-
-        function showHome() {
-            detailPage.classList.add('hidden');
-            unitesPage.classList.add('hidden');
-            setTimeout(() => {
-                homePage.classList.remove('hidden');
-            }, 300);
-        }
-    </script>
+            window.addEventListener('DOMContentLoaded', () => {
+                const hash = window.location.hash;
+                if (hash.startsWith('#faculty-')) {
+                    const facultyId = hash.replace('#faculty-', '');
+                    openDetail(facultyId, false);
+                }
+            });
+        </script>
 </body>
 
 </html>
